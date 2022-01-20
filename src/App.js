@@ -7,11 +7,13 @@ import Footer from './components/footer';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <p> main content </p>
-      <Footer />
-    </div>
+   <div className="App">
+      <Header info="this is my message" myNumber = "7" />
+      <Header info="this is My message" myNumber ="4" />
+      <p>  main content </p>
+      <Footer trademark="page by me"/>
+      </div>
+    
   );
 }
 
