@@ -7,7 +7,14 @@ function createAlert(){
   alert("Hello");
 }
 
-
+function ShowMessage(props){
+  if(props.toShow){
+    return <h2>My message</h2>
+  } else {
+    return <h2>Forbidden</h2>
+  }
+  
+}
 
 function App() {
   return (
@@ -17,6 +24,7 @@ function App() {
       <p>  main content </p>
       <Footer trademark="page by me"
       myalert={createAlert} />
+      <ShowMessage toShow={false}/>
       </div>
     
   );
